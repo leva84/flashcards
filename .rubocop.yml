@@ -1,0 +1,28 @@
+AllCops:
+  NewCops: enable
+  DisplayCopNames: true
+Metrics/LineLength:
+  Max: 200
+Metrics/MethodLength:
+  Exclude:
+    - 'bin/bundle'
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - 'bin/bundle'
+Metrics/PerceivedComplexity:
+  Exclude:
+    - 'bin/bundle'
+Metrics/AbcSize:
+  Exclude:
+    - 'bin/bundle'
+Style/Documentation:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'test/**/**/**'
+Style/GlobalStdStream:
+  Exclude:
+    - 'config/environments/production.rb'
+Style/RedundantFetchBlock:
+  Exclude:
+    - 'config/puma.rb'
