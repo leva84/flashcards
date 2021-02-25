@@ -10,7 +10,7 @@ gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 gem 'rubocop-rails', require: false
 gem 'sass-rails', '>= 6'
-gem 'sqlite3', '~> 1.4'
+gem 'pg'
 gem 'turbolinks', '~> 5'
 gem 'webpacker', '~> 4.0'
 gem "haml-rails", "~> 2.0"
