@@ -38,8 +38,7 @@
       %header.clearfix
         %h1= t('application.name')
         %ul.navigation-links
-          %li
-            %a{:href => "#"}= t('card.all')
+          %li= link_to(t('card.all'), cards_path)
           %li
             %a{:href => "#"}= t('card.add')
       %section
