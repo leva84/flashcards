@@ -1,4 +1,5 @@
 ru:
+  time: '%d/%m/%Y в %H:%M'
   hello: 'Привет !)'
   application:
     name: 'Флэшкарточкер'
