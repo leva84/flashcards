@@ -38,4 +38,15 @@ RSpec.describe Card, type: :model do
 
     after(:all) { Card.destroy_all }
   end
+
+  describe 'validations check' do
+    text = (0..5001).to_a.map(&:to_s).join
+
+    it { should validate_presence_of(:original_text) }
+    it { should allow_value('FBI and CIA').for(:original_text) }
+    it { should_not allow_value(text, 'FBI').for(:original_text) }
+
+    it { should allow_value('FBI and CIA').for(:translated_text) }
+    it { should_not allow_value(text, 'FBI').for(:translated_text) }
+  end
 end
