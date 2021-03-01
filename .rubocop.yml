@@ -15,11 +15,11 @@ Metrics/PerceivedComplexity:
 Metrics/AbcSize:
   Exclude:
     - 'bin/bundle'
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/**/**'
 Style/Documentation:
   Enabled: false
-Style/ClassAndModuleChildren:
-  Exclude:
-    - 'test/**/**/**'
 Style/GlobalStdStream:
   Exclude:
     - 'config/environments/production.rb'

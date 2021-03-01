@@ -4,6 +4,6 @@
       .card-header.text-center
         .h5= card.original_text
         .card-body
-          = card.review_date.strftime("%d/%m/%Y в %H:%M")
+          = card.review_date.strftime("%d/%m/%Y в %H:%M") if card.review_date.present?
           .btn-group.btn-group-sm.btn-block.shadow-lg
-            .btn.btn-info= link_to('Show', '#')
+            .btn.btn-info= link_to(t('card.show'), '#')

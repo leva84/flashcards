@@ -1,0 +1,4 @@
+one:
+  original_text: "sdhgodgoodbvol dbvkln n oboudbfo bouvouv ououvouvo  ouv"
+  translated_text: ""
+  review_date: <%= Time.new %>

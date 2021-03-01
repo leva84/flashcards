@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20_210_225_191_145) do
   enable_extension 'plpgsql'
 
   create_table 'cards', force: :cascade do |t|
-    t.text 'original_text'
+    t.text 'original_text', null: false
     t.text 'translated_text'
     t.datetime 'review_date'
     t.datetime 'created_at', precision: 6, null: false
