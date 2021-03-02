@@ -1,10 +1,4 @@
-= form_with model: @card, local: true do |form|
-  - @card.errors.full_messages.each do |message|
-    = message
-  = form.label :original_text
-  = form.text_area :original_text
-
-  = form.label :translated_text
-  = form.text_area :translated_text
-
-  = form.submit t('button.create_update')
+= simple_form_for @card do |f|
+  = f.input :original_text, label: t('card.original_text')
+  = f.input :translated_text, label: t('card.translated_text')
+  = f.button :submit, t('button.create_update')

@@ -13,6 +13,8 @@ ru:
     destroy: 'Удалить карточку'
     created_at: 'Создана'
     revision: 'Пересмотр'
+    original_text: 'Оригинальный текст'
+    translated_text: 'Текст перевода'
   button:
     create_update: 'Добавить'
   confirmations:

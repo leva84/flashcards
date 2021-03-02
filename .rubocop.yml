@@ -18,6 +18,7 @@ Metrics/AbcSize:
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/**/**'
+    - 'config/initializers/simple_form_bootstrap.rb'
 Style/Documentation:
   Enabled: false
 Style/GlobalStdStream:
