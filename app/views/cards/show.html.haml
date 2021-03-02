@@ -12,7 +12,8 @@
     .h6= @card.review_date.strftime(t('time2')) if @card.review_date.present?
   .row
     .btn-group
-      = link_to(t('card.update'), edit_card_path(@card), class: 'btn btn-secondary')
+      = link_to(t('card.update'), edit_card_path(@card),
+                          class: 'btn btn-secondary')
       = link_to(t('card.destroy'),
                           card_path(@card),
                           method: :delete,

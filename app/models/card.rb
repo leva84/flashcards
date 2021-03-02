@@ -11,7 +11,7 @@ class Card < ApplicationRecord
   private
 
   def unique_texts
-    errors.add(:translated_text, I18n.t('errors.unique_texts')) if original_text.downcase == translated_text.downcase
+    errors.add(:translated_text, I18n.t('errors.unique_texts')) if original_text.casecmp?(translated_text)
   end
 
   def date_time
