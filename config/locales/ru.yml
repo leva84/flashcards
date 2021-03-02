@@ -1,5 +1,6 @@
 ru:
-  time: '%d/%m/%Y в %H:%M'
+  time1: '%d/%m/%Y в %H:%M'
+  time2: '%d/%m/%Y'
   hello: 'Привет !)'
   application:
     name: 'Флэшкарточкер'
@@ -7,3 +8,16 @@ ru:
     all: 'Все карточки'
     add: 'Добавить карточку'
     show: 'Посмотреть карточку'
+    new: 'Новая карточка'
+    update: 'Обновить карточку'
+    destroy: 'Удалить карточку'
+    created_at: 'Создана'
+    revision: 'Пересмотр'
+    original_text: 'Оригинальный текст'
+    translated_text: 'Текст перевода'
+  button:
+    create_update: 'Добавить'
+  confirmations:
+    are_you_sure?: 'Вы уверены?'
+  errors:
+    unique_texts: 'Обыка при сохранении!!! Ваши тексты одинаковы!'

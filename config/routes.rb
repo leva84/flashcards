@@ -3,5 +3,5 @@
 Rails.application.routes.draw do
   root to: 'welcomes#index'
 
-  resources :cards, only: :index
+  resources :cards
 end
