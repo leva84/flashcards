@@ -1,0 +1,20 @@
+.container.shadow-lg.mb-3.p-4
+  .row
+    .col-6
+      .h5= @card.original_text
+    .col-6
+      .h5= @card.translated_text
+  .row.text-center.pt-4
+    %p.h4= t('card.created_at')
+    .h6= @card.created_at.strftime(t('time1')) if @card.review_date.present?
+  .row.text-center.pt-4
+    %p.h4= t('card.revision')
+    .h6= @card.review_date.strftime(t('time2')) if @card.review_date.present?
+  .row
+    .btn-group
+      = link_to(t('card.update'), edit_card_path(@card), class: 'btn btn-secondary')
+      = link_to(t('card.destroy'),
+                          card_path(@card),
+                          method: :delete,
+                          data: { confirm: t('confirmations.are_you_sure?') },
+                          class: 'btn btn-secondary')

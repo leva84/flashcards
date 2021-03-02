@@ -1,0 +1,10 @@
+= form_with model: @card, local: true do |form|
+  - @card.errors.full_messages.each do |message|
+    = message
+  = form.label :original_text
+  = form.text_area :original_text
+
+  = form.label :translated_text
+  = form.text_area :translated_text
+
+  = form.submit t('button.create_update')
